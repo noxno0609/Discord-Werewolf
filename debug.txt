@@ -1,0 +1,398 @@
+[2018-04-09 22:30:12.225283] [INFO] on_ready triggered!
+[2018-04-09 22:30:12.230296] [DEBUG] Players role id: 432916322465087500
+[2018-04-09 22:30:12.235811] [DEBUG] Admins role id: 432916350055219201
+[2018-04-09 22:30:12.240825] [DEBUG] Werewolf Notify role id: 432917096540930049
+[2018-04-09 22:30:16.429956] [DEBUG] Parsing command join with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:30:16.435972] [DEBUG] Parsing command join with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:30:27.977138] [INFO] on_ready triggered!
+[2018-04-09 22:30:27.983655] [DEBUG] Players role id: 432916322465087500
+[2018-04-09 22:30:27.990172] [DEBUG] Admins role id: 432916350055219201
+[2018-04-09 22:30:27.996690] [DEBUG] Werewolf Notify role id: 432917096540930049
+[2018-04-09 22:30:39.239563] [DEBUG] Parsing command join with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:30:42.114702] [DEBUG] Parsing command join with parameters `` from Vũ (346459578097074188)
+[2018-04-09 22:30:46.145412] [DEBUG] Parsing command join with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:30:49.080211] [DEBUG] Parsing command join with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:31:31.543540] [DEBUG] Parsing command join with parameters `` from Mòe (235741432109858816)
+[2018-04-09 22:31:34.752566] [DEBUG] Parsing command start with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:31:39.011884] [DEBUG] Parsing command start with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:31:57.367658] [DEBUG] Parsing command start with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:32:02.274696] [DEBUG] Parsing command start with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:32:05.209995] [DEBUG] Parsing command start with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:32:08.536335] [DEBUG] Parsing command start with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:32:09.206114] [INFO] Game object: ```py
+[True, {'305702402038693888': [True, 'villager', '', [], []], '235741432109858816': [True, 'villager', '', [], []], '346459578097074188': [True, 'wolf', '', [], []], '241866052710039552': [True, 'seer', '', [], []]}, False, [0, 0], [datetime.timedelta(0), datetime.timedelta(0)], datetime.datetime(2018, 4, 9, 22, 30, 39, 244576), 'default', {'seer': 1, 'villager': 2, 'wolf': 1}]
+```
+[2018-04-09 22:32:12.652270] [INFO] SUNSET LOG:
+[2018-04-09 22:32:37.184455] [DEBUG] pm from Lê Thị Bé Cái (241866052710039552): see Ben-X
+[2018-04-09 22:32:37.190973] [DEBUG] Parsing command see with parameters `ben-x` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:32:37.496285] [INFO] Lê Thị Bé Cái (241866052710039552) SEE Ben-X (305702402038693888) AS villager
+[2018-04-09 22:32:39.819456] [DEBUG] pm from Vũ (346459578097074188): Kill Lê Thị Bé Cái
+[2018-04-09 22:32:39.822966] [DEBUG] Parsing command kill with parameters `lê thị bé cái` from Vũ (346459578097074188)
+[2018-04-09 22:32:39.981888] [INFO] SUNRISE LOG:
+WOLFKILL: Lê Thị Bé Cái (241866052710039552)
+PROTECT_TOTEMED: 
+DEATH_TOTEMED: 
+PLAYERS TURNED WOLF: 
+DEATHS FROM WOLF: Lê Thị Bé Cái (241866052710039552)
+KILLED PLAYERS: Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:32:40.586996] [INFO] Vũ (346459578097074188) KILL Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:32:40.691775] [DEBUG] Lê Thị Bé Cái (241866052710039552) PLAYER DEATH IN GAME FOR night kill
+[2018-04-09 22:33:15.529843] [DEBUG] Parsing command lynch with parameters `<@235741432109858816>` from Ben-X (305702402038693888)
+[2018-04-09 22:33:16.249758] [INFO] Ben-X (305702402038693888) LYNCH Mòe (235741432109858816)
+[2018-04-09 22:33:19.741533] [DEBUG] pm from Vũ (346459578097074188): %lynch Mòe
+[2018-04-09 22:33:19.748552] [DEBUG] Parsing command lynch with parameters `mòe` from Vũ (346459578097074188)
+[2018-04-09 22:33:42.167122] [DEBUG] pm from Vũ (346459578097074188): %lynch
+[2018-04-09 22:33:42.175644] [DEBUG] Parsing command lynch with parameters `` from Vũ (346459578097074188)
+[2018-04-09 22:34:01.026734] [DEBUG] pm from Vũ (346459578097074188): %lynch Mòe
+[2018-04-09 22:34:01.033251] [DEBUG] Parsing command lynch with parameters `mòe` from Vũ (346459578097074188)
+[2018-04-09 22:34:20.531058] [DEBUG] pm from Ben-X (305702402038693888): %vote
+[2018-04-09 22:34:20.536573] [DEBUG] Parsing command vote with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:34:55.390684] [DEBUG] Parsing command vote with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:35:49.126465] [DEBUG] pm from Ben-X (305702402038693888): %list
+[2018-04-09 22:35:49.133986] [DEBUG] Parsing command list with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:36:06.755308] [DEBUG] pm from Ben-X (305702402038693888): %votes
+[2018-04-09 22:36:06.763831] [DEBUG] Parsing command votes with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:36:12.572264] [DEBUG] pm from Lê Thị Bé Cái (241866052710039552): %novote
+[2018-04-09 22:36:12.582792] [DEBUG] Parsing command novote with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:36:17.407613] [DEBUG] pm from Lê Thị Bé Cái (241866052710039552): %vote
+[2018-04-09 22:36:17.416636] [DEBUG] Parsing command vote with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:36:43.072306] [DEBUG] pm from Vũ (346459578097074188): %lynch
+[2018-04-09 22:36:43.084840] [DEBUG] Parsing command lynch with parameters `` from Vũ (346459578097074188)
+[2018-04-09 22:36:54.263041] [DEBUG] pm from Vũ (346459578097074188): %lynch Mòe
+[2018-04-09 22:36:54.274572] [DEBUG] Parsing command lynch with parameters `mòe` from Vũ (346459578097074188)
+[2018-04-09 22:37:00.557767] [DEBUG] pm from Lê Thị Bé Cái (241866052710039552): %info
+[2018-04-09 22:37:00.566289] [DEBUG] Parsing command info with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:37:07.816554] [DEBUG] pm from Lê Thị Bé Cái (241866052710039552): %help
+[2018-04-09 22:37:07.830592] [DEBUG] Parsing command help with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:37:10.108142] [DEBUG] pm from Lê Thị Bé Cái (241866052710039552): %help vote
+[2018-04-09 22:37:10.114158] [DEBUG] Parsing command help with parameters `vote` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:37:18.512975] [DEBUG] pm from Lê Thị Bé Cái (241866052710039552): %vote Moè
+[2018-04-09 22:37:18.517487] [DEBUG] Parsing command vote with parameters `moè` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:37:24.243702] [DEBUG] pm from Vũ (346459578097074188): %lynch @Mòe
+[2018-04-09 22:37:24.248715] [DEBUG] Parsing command lynch with parameters `@mòe` from Vũ (346459578097074188)
+[2018-04-09 22:37:27.464763] [DEBUG] pm from Lê Thị Bé Cái (241866052710039552): %help lynch
+[2018-04-09 22:37:27.483813] [DEBUG] Parsing command help with parameters `lynch` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:37:41.391265] [DEBUG] Parsing command lynch with parameters `mòe` from Vũ (346459578097074188)
+[2018-04-09 22:37:52.216028] [DEBUG] Parsing command vote with parameters `moè` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:37:59.326923] [DEBUG] Parsing command lynch with parameters `<@235741432109858816>` from Vũ (346459578097074188)
+[2018-04-09 22:37:59.651284] [INFO] Vũ (346459578097074188) LYNCH Mòe (235741432109858816)
+[2018-04-09 22:38:00.277949] [DEBUG] Mòe (235741432109858816) PLAYER DEATH IN GAME FOR lynch
+[2018-04-09 22:38:01.129211] [INFO] WINNERS: ['346459578097074188']
+[2018-04-09 22:38:02.212088] [DEBUG] Ben-X (305702402038693888) PLAYER DEATH NOT IN GAME FOR game end
+[2018-04-09 22:38:02.519405] [DEBUG] Mòe (235741432109858816) PLAYER DEATH NOT IN GAME FOR game end
+[2018-04-09 22:38:02.821207] [DEBUG] Vũ (346459578097074188) PLAYER DEATH NOT IN GAME FOR game end
+[2018-04-09 22:38:03.115990] [DEBUG] Lê Thị Bé Cái (241866052710039552) PLAYER DEATH NOT IN GAME FOR game end
+[2018-04-09 22:38:03.378187] [DEBUG] Parsing command vote with parameters `<@235741432109858816>` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:38:20.661611] [DEBUG] Parsing command fleave with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:38:25.681449] [DEBUG] Parsing command fleave with parameters `all` from Ben-X (305702402038693888)
+[2018-04-09 22:38:31.411676] [DEBUG] Parsing command fleave with parameters `all` from Ben-X (305702402038693888)
+[2018-04-09 22:38:34.124383] [DEBUG] Parsing command start with parameters `` from Vũ (346459578097074188)
+[2018-04-09 22:38:48.187751] [DEBUG] Parsing command join with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:38:49.765443] [DEBUG] Parsing command join with parameters `` from Vũ (346459578097074188)
+[2018-04-09 22:39:18.277202] [DEBUG] Parsing command join with parameters `` from Vũ (346459578097074188)
+[2018-04-09 22:39:20.436439] [DEBUG] Parsing command join with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:39:31.087239] **[ERROR]** <@305702402038693888> ```py
+Traceback (most recent call last):
+  File "bot.py", line 2015, in parse_command
+    await commands[commandname][0](message, parameters)
+  File "bot.py", line 294, in cmd_join
+    await client.add_roles(client.get_server(WEREWOLF_SERVER).get_member(message.author.id), PLAYERS_ROLE)
+  File "C:\Users\onspe\AppData\Local\Programs\Python\Python35\lib\site-packages\discord\client.py", line 2916, in add_roles
+    yield from self._replace_roles(member, new_roles)
+  File "C:\Users\onspe\AppData\Local\Programs\Python\Python35\lib\site-packages\discord\client.py", line 2887, in _replace_roles
+    yield from self.http.replace_roles(member.id, member.server.id, roles)
+  File "C:\Users\onspe\AppData\Local\Programs\Python\Python35\lib\site-packages\discord\http.py", line 200, in request
+    raise HTTPException(r, data)
+discord.errors.HTTPException: INTERNAL SERVER ERROR (status code: 500): 500: Internal Server Error
+
+```
+**session:**```py
+[False, {'305702402038693888': [True, '', '', [], []], '346459578097074188': [True, '', '', [], []], '241866052710039552': [True, '', '', [], []]}, False, [datetime.datetime(2018, 4, 9, 22, 38, 1, 135227), datetime.datetime(2018, 4, 9, 22, 38, 1, 135227)], [datetime.timedelta(0), datetime.timedelta(0)], datetime.datetime(2018, 4, 9, 22, 38, 48, 196775), '', {}]
+```
+[2018-04-09 22:40:03.145923] [DEBUG] Parsing command join with parameters `` from Mòe (235741432109858816)
+[2018-04-09 22:40:06.597093] [DEBUG] Parsing command join with parameters `` from Mòe (235741432109858816)
+[2018-04-09 22:40:17.553706] [DEBUG] Parsing command start with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:40:28.385488] [DEBUG] Parsing command start with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:40:58.917614] [INFO] on_ready triggered!
+[2018-04-09 22:40:58.929647] [DEBUG] Players role id: 432916322465087500
+[2018-04-09 22:40:58.935160] [DEBUG] Admins role id: 432916350055219201
+[2018-04-09 22:40:58.941176] [DEBUG] Werewolf Notify role id: 432917096540930049
+[2018-04-09 22:41:04.395670] [DEBUG] Parsing command join with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:41:07.793699] [DEBUG] Parsing command join with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:41:09.315743] [DEBUG] Parsing command join with parameters `` from Vũ (346459578097074188)
+[2018-04-09 22:41:30.846955] [DEBUG] Parsing command botocchos with parameters `` from Vũ (346459578097074188)
+[2018-04-09 22:41:31.030944] [DEBUG] Parsing command johncena with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:41:32.268731] [DEBUG] Parsing command join with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:41:45.374054] [DEBUG] Parsing command join with parameters `` from Mòe (235741432109858816)
+[2018-04-09 22:41:45.771109] [DEBUG] Parsing command johncena with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:42:00.476182] [DEBUG] Parsing command join with parameters `` from Mòe (235741432109858816)
+[2018-04-09 22:42:09.846580] **[ERROR]** <@305702402038693888> ```py
+Traceback (most recent call last):
+  File "bot.py", line 2015, in parse_command
+    await commands[commandname][0](message, parameters)
+  File "bot.py", line 290, in cmd_join
+    message.author.name, len(session[1])))
+  File "C:\Users\onspe\AppData\Local\Programs\Python\Python35\lib\site-packages\discord\client.py", line 1152, in send_message
+    data = yield from self.http.send_message(channel_id, content, guild_id=guild_id, tts=tts, embed=embed)
+  File "C:\Users\onspe\AppData\Local\Programs\Python\Python35\lib\site-packages\discord\http.py", line 200, in request
+    raise HTTPException(r, data)
+discord.errors.HTTPException: INTERNAL SERVER ERROR (status code: 500): 500: Internal Server Error
+
+```
+**session:**```py
+[False, {'235741432109858816': [True, '', '', [], []], '305702402038693888': [True, '', '', [], []], '241866052710039552': [True, '', '', [], []], '346459578097074188': [True, '', '', [], []]}, False, [0, 0], [datetime.timedelta(0), datetime.timedelta(0)], datetime.datetime(2018, 4, 9, 22, 41, 4, 403691), '', {}]
+```
+[2018-04-09 22:42:42.856440] [DEBUG] Parsing command ping with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:46:12.105451] [INFO] on_ready triggered!
+[2018-04-09 22:46:12.110466] [DEBUG] Players role id: 432916322465087500
+[2018-04-09 22:46:12.115086] [DEBUG] Admins role id: 432916350055219201
+[2018-04-09 22:46:12.120099] [DEBUG] Werewolf Notify role id: 432917096540930049
+[2018-04-09 22:46:29.342105] [DEBUG] Parsing command join with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:46:33.410599] [DEBUG] Parsing command join with parameters `` from Vũ (346459578097074188)
+[2018-04-09 22:46:33.720115] [DEBUG] Parsing command join with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:46:42.784603] [DEBUG] Parsing command join with parameters `` from Mòe (235741432109858816)
+[2018-04-09 22:46:45.914517] [DEBUG] Parsing command start with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:47:20.253227] [DEBUG] Parsing command start with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:47:24.563678] [DEBUG] Parsing command start with parameters `` from Vũ (346459578097074188)
+[2018-04-09 22:47:25.503973] [INFO] Game object: ```py
+[True, {'305702402038693888': [True, 'seer', '', [], []], '235741432109858816': [True, 'villager', '', [], []], '241866052710039552': [True, 'wolf', '', [], []], '346459578097074188': [True, 'villager', '', [], []]}, False, [0, 0], [datetime.timedelta(0), datetime.timedelta(0)], datetime.datetime(2018, 4, 9, 22, 46, 29, 347619), 'default', {'villager': 2, 'wolf': 1, 'seer': 1}]
+```
+[2018-04-09 22:47:28.854729] [INFO] SUNSET LOG:
+[2018-04-09 22:47:38.273237] [DEBUG] pm from Lê Thị Bé Cái (241866052710039552): kill Ben-X
+[2018-04-09 22:47:38.277248] [DEBUG] Parsing command kill with parameters `ben-x` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:47:39.007833] [INFO] Lê Thị Bé Cái (241866052710039552) KILL Ben-X (305702402038693888)
+[2018-04-09 22:47:40.487618] [DEBUG] pm from Ben-X (305702402038693888): %see Mòe
+[2018-04-09 22:47:40.498646] [DEBUG] Parsing command see with parameters `mòe` from Ben-X (305702402038693888)
+[2018-04-09 22:47:40.673484] [INFO] SUNRISE LOG:
+WOLFKILL: Ben-X (305702402038693888)
+PROTECT_TOTEMED: 
+DEATH_TOTEMED: 
+PLAYERS TURNED WOLF: 
+DEATHS FROM WOLF: Ben-X (305702402038693888)
+KILLED PLAYERS: Ben-X (305702402038693888)
+[2018-04-09 22:47:40.855105] [INFO] Ben-X (305702402038693888) SEE Mòe (235741432109858816) AS villager
+[2018-04-09 22:47:41.407738] [DEBUG] Ben-X (305702402038693888) PLAYER DEATH IN GAME FOR night kill
+[2018-04-09 22:48:15.283632] [DEBUG] Parsing command strat with parameters `` from Mòe (235741432109858816)
+[2018-04-09 22:48:30.778164] [DEBUG] Parsing command lynch with parameters `<@241866052710039552>` from Ben-X (305702402038693888)
+[2018-04-09 22:48:31.166782] [INFO] Ben-X (305702402038693888) LYNCH Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:48:55.562766] [DEBUG] Parsing command novote with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:48:57.379645] [DEBUG] Parsing command lynch with parameters `<@241866052710039552>` from Vũ (346459578097074188)
+[2018-04-09 22:48:57.729753] [INFO] Vũ (346459578097074188) LYNCH Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:49:06.578407] [DEBUG] Parsing command lynch with parameters `` from Mòe (235741432109858816)
+[2018-04-09 22:49:45.412112] [DEBUG] Parsing command lynch with parameters `<@241866052710039552>` from Vũ (346459578097074188)
+[2018-04-09 22:49:45.826626] [INFO] Vũ (346459578097074188) LYNCH Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:49:53.030402] [DEBUG] Parsing command lynch with parameters `<@241866052710039552>` from Mòe (235741432109858816)
+[2018-04-09 22:49:53.388002] [INFO] Mòe (235741432109858816) LYNCH Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:49:53.604919] [DEBUG] Parsing command lynch with parameters `<@241866052710039552>` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:49:53.992575] [DEBUG] Lê Thị Bé Cái (241866052710039552) PLAYER DEATH IN GAME FOR lynch
+[2018-04-09 22:49:54.069797] [INFO] Lê Thị Bé Cái (241866052710039552) LYNCH Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:49:54.738466] [INFO] WINNERS: ['305702402038693888', '235741432109858816', '346459578097074188']
+[2018-04-09 22:49:55.538404] [DEBUG] Ben-X (305702402038693888) PLAYER DEATH NOT IN GAME FOR game end
+[2018-04-09 22:49:55.823211] [DEBUG] Mòe (235741432109858816) PLAYER DEATH NOT IN GAME FOR game end
+[2018-04-09 22:49:56.135169] [DEBUG] Lê Thị Bé Cái (241866052710039552) PLAYER DEATH NOT IN GAME FOR game end
+[2018-04-09 22:49:56.430026] [DEBUG] Vũ (346459578097074188) PLAYER DEATH NOT IN GAME FOR game end
+[2018-04-09 22:51:50.269315] [INFO] on_ready triggered!
+[2018-04-09 22:51:50.273379] [DEBUG] Players role id: 432916322465087500
+[2018-04-09 22:51:50.277390] [DEBUG] Admins role id: 432916350055219201
+[2018-04-09 22:51:50.280900] [DEBUG] Werewolf Notify role id: 432917096540930049
+[2018-04-09 22:52:17.342125] [INFO] on_ready triggered!
+[2018-04-09 22:52:17.352151] [DEBUG] Players role id: 432916322465087500
+[2018-04-09 22:52:17.363181] [DEBUG] Admins role id: 432916350055219201
+[2018-04-09 22:52:17.373207] [DEBUG] Werewolf Notify role id: 432917096540930049
+[2018-04-09 22:52:24.891568] [DEBUG] Parsing command join with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:52:25.532548] [DEBUG] Parsing command join with parameters `` from Vũ (346459578097074188)
+[2018-04-09 22:52:29.146309] [DEBUG] Parsing command join with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:52:31.079173] [DEBUG] Parsing command start with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:52:37.204379] [DEBUG] Parsing command start with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:52:40.499635] [DEBUG] Parsing command start with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:52:40.967378] [DEBUG] Parsing command start with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:52:41.194482] [DEBUG] Parsing command start with parameters `` from Vũ (346459578097074188)
+[2018-04-09 22:52:41.590534] **[WARNING]** Role attribution failed with error: ```py
+Traceback (most recent call last):
+  File "bot.py", line 2736, in run_game
+    await assign_roles(session[6])
+  File "bot.py", line 2112, in assign_roles
+    for role in gamemode_roles:
+TypeError: 'NoneType' object is not iterable
+
+```
+[2018-04-09 22:52:41.595547] **[WARNING]** Role attribution failed with error: ```py
+Traceback (most recent call last):
+  File "bot.py", line 2736, in run_game
+    await assign_roles(session[6])
+  File "bot.py", line 2112, in assign_roles
+    for role in gamemode_roles:
+TypeError: 'NoneType' object is not iterable
+
+```
+[2018-04-09 22:52:41.600561] **[WARNING]** Role attribution failed with error: ```py
+Traceback (most recent call last):
+  File "bot.py", line 2736, in run_game
+    await assign_roles(session[6])
+  File "bot.py", line 2112, in assign_roles
+    for role in gamemode_roles:
+TypeError: 'NoneType' object is not iterable
+
+```
+[2018-04-09 22:52:41.982575] **[ERROR]** <@305702402038693888> ```py
+Traceback (most recent call last):
+  File "bot.py", line 2015, in parse_command
+    await commands[commandname][0](message, parameters)
+  File "bot.py", line 467, in cmd_start
+    await run_game()
+  File "bot.py", line 2744, in run_game
+    await cmd_fstop(msg, '-force')
+  File "bot.py", line 485, in cmd_fstop
+    msg = "Game forcibly stopped by **" + message.author.name + "**"
+AttributeError: 'NoneType' object has no attribute 'author'
+
+```
+**session:**```py
+[True, {'241866052710039552': [True, '', '', [], []], '305702402038693888': [True, '', '', [], []], '346459578097074188': [True, '', '', [], []]}, False, [0, 0], [datetime.timedelta(0), datetime.timedelta(0)], datetime.datetime(2018, 4, 9, 22, 52, 24, 897584), 'default', {}]
+```
+[2018-04-09 22:53:28.792409] [INFO] on_ready triggered!
+[2018-04-09 22:53:28.802937] [DEBUG] Players role id: 432916322465087500
+[2018-04-09 22:53:28.813465] [DEBUG] Admins role id: 432916350055219201
+[2018-04-09 22:53:28.822488] [DEBUG] Werewolf Notify role id: 432917096540930049
+[2018-04-09 22:53:39.091931] [DEBUG] Parsing command join with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:53:41.686859] [DEBUG] Parsing command join with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:53:44.955310] [DEBUG] Parsing command join with parameters `` from Vũ (346459578097074188)
+[2018-04-09 22:54:13.016002] [DEBUG] Parsing command join with parameters `` from Ginger (364790845787996161)
+[2018-04-09 22:54:16.588925] [DEBUG] Parsing command start with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:54:17.879650] [DEBUG] Parsing command start with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:54:22.578600] [DEBUG] Parsing command start with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:54:25.544577] [DEBUG] Parsing command start with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:54:26.268528] [DEBUG] Parsing command start with parameters `` from Vũ (346459578097074188)
+[2018-04-09 22:54:26.896836] [INFO] Game object: ```py
+[True, {'346459578097074188': [True, 'wolf', '', [], []], '364790845787996161': [True, 'villager', '', [], []], '241866052710039552': [True, 'villager', '', [], []], '305702402038693888': [True, 'seer', '', [], []]}, False, [0, 0], [datetime.timedelta(0), datetime.timedelta(0)], datetime.datetime(2018, 4, 9, 22, 53, 39, 98448), 'default', {'wolf': 1, 'villager': 2, 'seer': 1}]
+```
+[2018-04-09 22:54:30.352531] [INFO] SUNSET LOG:
+[2018-04-09 22:54:41.800035] [DEBUG] pm from Vũ (346459578097074188): Kill Ginger
+[2018-04-09 22:54:41.810571] [DEBUG] Parsing command kill with parameters `ginger` from Vũ (346459578097074188)
+[2018-04-09 22:54:42.329982] [DEBUG] pm from Ben-X (305702402038693888): see Ginger
+[2018-04-09 22:54:42.333493] [DEBUG] Parsing command see with parameters `ginger` from Ben-X (305702402038693888)
+[2018-04-09 22:54:42.477892] [INFO] Vũ (346459578097074188) KILL Ginger (364790845787996161)
+[2018-04-09 22:54:42.521007] [INFO] SUNRISE LOG:
+WOLFKILL: Ginger (364790845787996161)
+PROTECT_TOTEMED: 
+DEATH_TOTEMED: 
+PLAYERS TURNED WOLF: 
+DEATHS FROM WOLF: Ginger (364790845787996161)
+KILLED PLAYERS: Ginger (364790845787996161)
+[2018-04-09 22:54:42.709523] [INFO] Ben-X (305702402038693888) SEE Ginger (364790845787996161) AS villager
+[2018-04-09 22:54:43.118637] [DEBUG] Ginger (364790845787996161) PLAYER DEATH IN GAME FOR night kill
+[2018-04-09 22:55:17.770282] [DEBUG] Parsing command start with parameters `` from Ginger (364790845787996161)
+[2018-04-09 22:55:27.435447] [DEBUG] Parsing command lynch with parameters `<@!346459578097074188>` from Ben-X (305702402038693888)
+[2018-04-09 22:55:29.452135] [INFO] Ben-X (305702402038693888) LYNCH Vũ (346459578097074188)
+[2018-04-09 22:55:31.298976] [DEBUG] Parsing command vote with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:55:39.519663] [DEBUG] Parsing command lynch with parameters `<@305702402038693888>` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:55:41.538150] [INFO] Lê Thị Bé Cái (241866052710039552) LYNCH Ben-X (305702402038693888)
+[2018-04-09 22:55:47.685728] [DEBUG] Parsing command vote with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:55:48.253429] [DEBUG] Parsing command lynch with parameters `ben-x` from Vũ (346459578097074188)
+[2018-04-09 22:55:52.440716] [INFO] Vũ (346459578097074188) LYNCH Ben-X (305702402038693888)
+[2018-04-09 22:56:00.126437] [DEBUG] Ben-X (305702402038693888) PLAYER DEATH IN GAME FOR lynch
+[2018-04-09 22:56:06.659165] [INFO] WINNERS: ['346459578097074188']
+[2018-04-09 22:56:07.259225] [DEBUG] Vũ (346459578097074188) PLAYER DEATH NOT IN GAME FOR game end
+[2018-04-09 22:56:07.556281] [DEBUG] Ginger (364790845787996161) PLAYER DEATH NOT IN GAME FOR game end
+[2018-04-09 22:56:07.855930] [DEBUG] Lê Thị Bé Cái (241866052710039552) PLAYER DEATH NOT IN GAME FOR game end
+[2018-04-09 22:56:08.160313] [DEBUG] Ben-X (305702402038693888) PLAYER DEATH NOT IN GAME FOR game end
+[2018-04-09 22:56:55.460137] [DEBUG] Parsing command join with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:57:00.227946] [DEBUG] Parsing command join with parameters `` from Vũ (346459578097074188)
+[2018-04-09 22:57:01.663911] [DEBUG] Parsing command join with parameters `` from Ginger (364790845787996161)
+[2018-04-09 22:57:06.417321] [DEBUG] Parsing command join with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:57:14.666860] [DEBUG] Parsing command start with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:57:24.355122] [DEBUG] Parsing command start with parameters `` from Vũ (346459578097074188)
+[2018-04-09 22:57:25.313859] [DEBUG] Parsing command start with parameters `` from Ginger (364790845787996161)
+[2018-04-09 22:57:37.488386] [DEBUG] Parsing command start with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:57:39.821512] [INFO] Game object: ```py
+[True, {'241866052710039552': [True, 'seer', '', [], []], '364790845787996161': [True, 'villager', '', [], []], '346459578097074188': [True, 'wolf', '', [], []], '305702402038693888': [True, 'villager', '', [], []]}, False, [datetime.datetime(2018, 4, 9, 22, 56, 6, 662750), datetime.datetime(2018, 4, 9, 22, 56, 6, 662750)], [datetime.timedelta(0), datetime.timedelta(0)], datetime.datetime(2018, 4, 9, 22, 56, 55, 474175), 'default', {'wolf': 1, 'villager': 2, 'seer': 1}]
+```
+[2018-04-09 22:57:47.393323] [INFO] SUNSET LOG:
+[2018-04-09 22:58:00.517954] [DEBUG] pm from Vũ (346459578097074188): %kill Lê Thị Bé Cái
+[2018-04-09 22:58:00.524471] [DEBUG] Parsing command kill with parameters `lê thị bé cái` from Vũ (346459578097074188)
+[2018-04-09 22:58:01.132602] [INFO] Vũ (346459578097074188) KILL Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:58:17.151390] [DEBUG] pm from Lê Thị Bé Cái (241866052710039552): see @Ginger
+[2018-04-09 22:58:17.154969] [DEBUG] Parsing command see with parameters `@ginger` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:58:29.454153] [DEBUG] pm from Lê Thị Bé Cái (241866052710039552): see Ginger
+[2018-04-09 22:58:29.460671] [DEBUG] Parsing command see with parameters `ginger` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:58:29.606074] [INFO] SUNRISE LOG:
+WOLFKILL: Lê Thị Bé Cái (241866052710039552)
+PROTECT_TOTEMED: 
+DEATH_TOTEMED: 
+PLAYERS TURNED WOLF: 
+DEATHS FROM WOLF: Lê Thị Bé Cái (241866052710039552)
+KILLED PLAYERS: Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 22:58:29.775024] [INFO] Lê Thị Bé Cái (241866052710039552) SEE Ginger (364790845787996161) AS villager
+[2018-04-09 22:58:32.543874] [DEBUG] Lê Thị Bé Cái (241866052710039552) PLAYER DEATH IN GAME FOR night kill
+[2018-04-09 22:58:54.399242] [DEBUG] Parsing command lynch with parameters `<@364790845787996161>` from Ben-X (305702402038693888)
+[2018-04-09 22:58:56.443083] [INFO] Ben-X (305702402038693888) LYNCH Ginger (364790845787996161)
+[2018-04-09 22:59:01.983936] [DEBUG] Parsing command lynch with parameters `<@!346459578097074188>` from Ben-X (305702402038693888)
+[2018-04-09 22:59:25.727277] [INFO] Ben-X (305702402038693888) LYNCH Vũ (346459578097074188)
+[2018-04-09 22:59:32.722010] [DEBUG] Parsing command votes with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:59:37.348848] [DEBUG] Parsing command lynch with parameters `ben-x` from Vũ (346459578097074188)
+[2018-04-09 22:59:38.508801] [INFO] Vũ (346459578097074188) LYNCH Ben-X (305702402038693888)
+[2018-04-09 22:59:44.569497] [DEBUG] Parsing command vote with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 22:59:44.817744] [DEBUG] Parsing command lynch with parameters `ginger` from Vũ (346459578097074188)
+[2018-04-09 22:59:45.673598] [INFO] Vũ (346459578097074188) LYNCH Ginger (364790845787996161)
+[2018-04-09 23:00:31.045031] [DEBUG] Parsing command lynch with parameters `vũ` from Ginger (364790845787996161)
+[2018-04-09 23:00:31.447806] [INFO] Ginger (364790845787996161) LYNCH Vũ (346459578097074188)
+[2018-04-09 23:00:32.117599] [DEBUG] Vũ (346459578097074188) PLAYER DEATH IN GAME FOR lynch
+[2018-04-09 23:00:32.510151] [INFO] WINNERS: ['305702402038693888', '364790845787996161', '241866052710039552']
+[2018-04-09 23:00:33.681268] [DEBUG] Lê Thị Bé Cái (241866052710039552) PLAYER DEATH NOT IN GAME FOR game end
+[2018-04-09 23:00:34.182679] [DEBUG] Ginger (364790845787996161) PLAYER DEATH NOT IN GAME FOR game end
+[2018-04-09 23:00:34.490719] [DEBUG] Vũ (346459578097074188) PLAYER DEATH NOT IN GAME FOR game end
+[2018-04-09 23:00:34.778510] [DEBUG] Ben-X (305702402038693888) PLAYER DEATH NOT IN GAME FOR game end
+[2018-04-09 23:01:13.221655] [DEBUG] Parsing command join with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 23:01:17.823014] [DEBUG] Parsing command join with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 23:01:22.035342] [DEBUG] Parsing command join with parameters `` from Vũ (346459578097074188)
+[2018-04-09 23:01:23.477546] [DEBUG] Parsing command join with parameters `` from Ginger (364790845787996161)
+[2018-04-09 23:01:33.033442] [DEBUG] Parsing command start with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 23:01:35.585456] [DEBUG] Parsing command start with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 23:01:39.317243] [DEBUG] Parsing command start with parameters `` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 23:01:40.960041] [INFO] Game object: ```py
+[True, {'346459578097074188': [True, 'wolf', '', [], []], '364790845787996161': [True, 'villager', '', [], []], '241866052710039552': [True, 'seer', '', [], []], '305702402038693888': [True, 'villager', '', [], []]}, False, [datetime.datetime(2018, 4, 9, 23, 0, 32, 513660), datetime.datetime(2018, 4, 9, 23, 0, 32, 513660)], [datetime.timedelta(0), datetime.timedelta(0)], datetime.datetime(2018, 4, 9, 23, 1, 13, 227170), 'default', {'wolf': 1, 'villager': 2, 'seer': 1}]
+```
+[2018-04-09 23:01:43.260568] [INFO] SUNSET LOG:
+[2018-04-09 23:01:50.942730] [DEBUG] pm from Lê Thị Bé Cái (241866052710039552): see Vũ
+[2018-04-09 23:01:50.946741] [DEBUG] Parsing command see with parameters `vũ` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 23:01:51.353105] [INFO] Lê Thị Bé Cái (241866052710039552) SEE Vũ (346459578097074188) AS wolf
+[2018-04-09 23:01:54.517154] [DEBUG] pm from Vũ (346459578097074188): %kill Ben-X
+[2018-04-09 23:01:54.529186] [DEBUG] Parsing command kill with parameters `ben-x` from Vũ (346459578097074188)
+[2018-04-09 23:01:54.641986] [INFO] SUNRISE LOG:
+WOLFKILL: Ben-X (305702402038693888)
+PROTECT_TOTEMED: 
+DEATH_TOTEMED: 
+PLAYERS TURNED WOLF: 
+DEATHS FROM WOLF: Ben-X (305702402038693888)
+KILLED PLAYERS: Ben-X (305702402038693888)
+[2018-04-09 23:01:55.144414] [INFO] Vũ (346459578097074188) KILL Ben-X (305702402038693888)
+[2018-04-09 23:01:55.332961] [DEBUG] Ben-X (305702402038693888) PLAYER DEATH IN GAME FOR night kill
+[2018-04-09 23:02:10.160009] [DEBUG] Parsing command list with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 23:02:18.022734] [DEBUG] Parsing command fnight with parameters `` from Ben-X (305702402038693888)
+[2018-04-09 23:02:18.341843] **[WARNING]** Ben-X (305702402038693888) FNIGHT
+[2018-04-09 23:02:19.763018] [INFO] SUNSET LOG:
+[2018-04-09 23:02:29.078805] [DEBUG] pm from Vũ (346459578097074188): @Kill Ginger
+[2018-04-09 23:02:29.088329] [DEBUG] Parsing command @kill with parameters `ginger` from Vũ (346459578097074188)
+[2018-04-09 23:02:36.249092] [DEBUG] pm from Vũ (346459578097074188): %Kill Ginger
+[2018-04-09 23:02:36.257614] [DEBUG] Parsing command kill with parameters `ginger` from Vũ (346459578097074188)
+[2018-04-09 23:02:36.959365] [INFO] Vũ (346459578097074188) KILL Ginger (364790845787996161)
+[2018-04-09 23:02:54.943027] [DEBUG] pm from Lê Thị Bé Cái (241866052710039552): see Ginger
+[2018-04-09 23:02:54.948040] [DEBUG] Parsing command see with parameters `ginger` from Lê Thị Bé Cái (241866052710039552)
+[2018-04-09 23:02:55.109010] [INFO] SUNRISE LOG:
+WOLFKILL: Ginger (364790845787996161)
+PROTECT_TOTEMED: 
+DEATH_TOTEMED: 
+PLAYERS TURNED WOLF: 
+DEATHS FROM WOLF: Ginger (364790845787996161)
+KILLED PLAYERS: Ginger (364790845787996161)
+[2018-04-09 23:02:55.290528] [INFO] Lê Thị Bé Cái (241866052710039552) SEE Ginger (364790845787996161) AS villager
+[2018-04-09 23:02:55.866888] [DEBUG] Ginger (364790845787996161) PLAYER DEATH IN GAME FOR night kill
+[2018-04-09 23:02:56.195427] [INFO] WINNERS: ['346459578097074188']
+[2018-04-09 23:02:56.825368] [DEBUG] Vũ (346459578097074188) PLAYER DEATH NOT IN GAME FOR game end
+[2018-04-09 23:02:57.156646] [DEBUG] Ginger (364790845787996161) PLAYER DEATH NOT IN GAME FOR game end
+[2018-04-09 23:02:57.585488] [DEBUG] Lê Thị Bé Cái (241866052710039552) PLAYER DEATH NOT IN GAME FOR game end
+[2018-04-09 23:02:57.900437] [DEBUG] Ben-X (305702402038693888) PLAYER DEATH NOT IN GAME FOR game end
+[2018-04-09 23:05:12.647936] [INFO] on_ready triggered!
+[2018-04-09 23:05:12.652448] [DEBUG] Players role id: 432916322465087500
+[2018-04-09 23:05:12.656960] [DEBUG] Admins role id: 432916350055219201
+[2018-04-09 23:05:12.661973] [DEBUG] Werewolf Notify role id: 432917096540930049
