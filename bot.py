@@ -3251,7 +3251,7 @@ async def game_loop(ses=None):
                         await send_lobby(lynched_msg)
                         await player_death(lynched_player, 'lynch')
                     if get_role(lynched_player, 'role') == 'fool' and 'revealing_totem' not in session[1][lynched_player][4]:
-                        win_msg = "The fool has been lynched, causing them to win!\n\n" + end_game_stats()
+                        win_msg = "Bố nào treo cổ thằng khờ v, nó thắng cmnr !!!!\n\n" + end_game_stats()
                         o = []
                         for n in session[1][lynched_player][4]:
                             if n.startswith('lover:'):
@@ -3269,7 +3269,7 @@ async def game_loop(ses=None):
             # BETWEEN DAY AND NIGHT
             session[2] = False
             if session[0] and win_condition() == None:
-                await send_lobby("Day lasted **{0:02d}:{1:02d}**. The villagers, exhausted from the day's events, go to bed.".format(
+                await send_lobby("Ngày kéo dài **{0:02d}:{1:02d}**. Dân quẩy nhiều mệt r, đi ngủ.".format(
                                                                     day_elapsed.seconds // 60, day_elapsed.seconds % 60))
                 for player in session[1]:
                     session[1][player][4][:] = [x for x in session[1][player][4] if x not in [
@@ -3337,8 +3337,8 @@ async def game_start_timeout_loop():
     if not session[0] and len(session[1]) > 0:
         session[0] = True
         await client.change_presence(game=client.get_server(WEREWOLF_SERVER).me.game, status=discord.Status.online)
-        await send_lobby("{0}, the game has taken too long to start and has been cancelled. "
-                          "If you are still here and would like to start a new game, please do `!join` again.".format(PLAYERS_ROLE.mention))
+        await send_lobby("{0}, Bố chờ lâu quá méo chờ nữa !!! CANCEL!!!! "
+                          "Nếu muốn chơi tiếp gõ `!join` đi nà.".format(PLAYERS_ROLE.mention))
         perms = client.get_channel(GAME_CHANNEL).overwrites_for(client.get_server(WEREWOLF_SERVER).default_role)
         perms.send_messages = True
         await client.edit_channel_permissions(client.get_channel(GAME_CHANNEL), client.get_server(WEREWOLF_SERVER).default_role, perms)
@@ -3374,52 +3374,52 @@ COMMANDS_FOR_ROLE = {'see' : ['seer', 'oracle', 'augur'],
                      'give' : ['shaman'],
                      'visit' : ['harlot'],
                      'shoot' : ['gunner'],
-                     'observe' : ['werecrow', 'sorcerer'],
+                     'xem' : ['werecrow', 'sorcerer'],
                      'pass' : ['harlot', 'hunter'],
                      'id' : ['detective'],
                      'choose' : ['matchmaker']}
-GAMEPLAY_COMMANDS = ['join', 'j', 'start', 'vote', 'lynch', 'v', 'abstain', 'abs', 'nl', 'stats', 'leave', 'q', 'role', 'roles']
+GAMEPLAY_COMMANDS = ['join', 'j', 'start', 'vote', 'treoco', 'v', 'abstain', 'abs', 'nl', 'stats', 'leave', 'q', 'role', 'roles']
 GAMEPLAY_COMMANDS += list(COMMANDS_FOR_ROLE)
 
 # {role name : [team, plural, description]}
-roles = {'wolf' : ['wolf', 'wolves', "Your job is to kill all of the villagers. Type `kill <player>` in private message to kill them."],
-         'werecrow' : ['wolf', 'werecrows', "You are part of the wolfteam. Use `observe <player>` during the night to see if they were in bed or not. "
-                                            "You may also use `kill <player>` to kill them."],
-         'wolf cub' : ['wolf', 'wolf cubs', "You are part of the wolfteam. While you cannot kill anyone, the other wolves will "
-                                            "become enraged if you die and will get two kills the following night."],
-         'werekitten' : ['wolf', 'werekittens', "You are like a normal wolf, except due to your cuteness, you are seen as a villager "
-                                                "and gunners will always miss when they shoot you. Use `kill <player>` in private message "
-                                                "to vote to kill <player>."],
-         'traitor' : ['wolf', 'traitors', "You are exactly like a villager, but you are part of the wolf team. Only the detective can reveal your true "
-                                          "identity. Once all other wolves die, you will turn into a wolf."],
-         'sorcerer' : ['wolf', 'sorcerers', "You may use `observe <player>` in pm during the night to observe someone and determine if they "
-                                            "are the seer, oracle, or augur. You are seen as a villager; only detectives can reveal your true identity."],
-         'cultist' : ['wolf', 'cultists', "Your job is to help the wolves kill all of the villagers."],
-         'seer' : ['village', 'seers', "Your job is to detect the wolves; you may have a vision once per night. Type `see <player>` in private message to see their role."],
-         'oracle' : ['village', 'oracles', "Your job is to detect the wolves; you may have a vision once per night. Type `see <player>` in private message to see whether or not they are a wolf."],
-         'shaman' : ['village', 'shamans', "You select a player to receive a totem each night by using `give <player>`. You may give a totem to yourself, but you may not give the same"
-                                           " person a totem two nights in a row. If you do not give the totem to anyone, it will be given to a random player. "
-                                           "To see your current totem, use the command `myrole`."],
-         'harlot' : ['village', 'harlots', "You may spend the night with one player each night by using `visit <player>`. If you visit a victim of a wolf, or visit a wolf, "
-                                           "you will die. You may visit yourself to stay home."],
-         'hunter' : ['village', 'hunters', "Your job is to help kill the wolves. Once per game, you may kill another player using `kill <player>`. "
-                                           "If you do not wish to kill anyone tonight, use `pass` instead."],
-         'augur' : ['village', 'augurs', "Your job is to detect the wolves; you may have a vision once per night. Type `see <player>` in private message to see which team they are on."],
-         'detective' : ['village', 'detectives', "Your job is to determine all of the wolves and traitors. During the day, you may use `id <player>` in private message "
-                                                 "to determine their true identity. However you risk a {}% chance of revealing your role to the wolves every time you use your ability.".format(int(DETECTIVE_REVEAL_CHANCE * 100))],
-         'villager' : ['village', 'villagers', "Your job is to lynch all of the wolves."],
-         'crazed shaman' : ['neutral', 'crazed shamans', "You select a player to receive a random totem each night by using `give <player>`. You may give a totem to yourself, "
-                                                         "but you may not give the same person a totem two nights in a row. If you do not give the totem to anyone, "
-                                                         "it will be given to a random player. You win if you are alive by the end of the game."],
-         'fool' : ['neutral', 'fools', "You become the sole winner if you are lynched during the day. You cannot win otherwise."],
-         'cursed villager' : ['template', 'cursed villagers', "This template is hidden and is seen as a wolf by the seer. Roles normally seen as wolf, the seer, and the fool cannot be cursed."],
-         'gunner' : ['template', 'gunners', "This template gives the player a gun. Type `{0}shoot <player>` in channel during the day to shoot <player>. "
-                                            "If you are a villager and shoot a wolf, they will die. Otherwise, there is a chance of killing them, injuring "
-                                            "them, or the gun exploding. If you are a wolf and shoot at a wolf, you will intentionally miss."],
-         'matchmaker' : ['village', 'matchmakers', "You can select two players to be lovers with `{0}choose <player1> and <player2>`."
-                                                   " If one lover dies, the other will as well. You may select yourself as one of the lovers."
-                                                   " You may only select lovers during the first night."
-                                                   " If you do not select lovers, they will be randomly selected and you will not be told who they are (unless you are one of them)."]}
+roles = {'wolf' : ['wolf', 'wolves', "SÓI: Việc của bạn là giết toàn bộ dân làng. Gõ `kill <player>` trong tin nhắn riêng với bot để giết người bạn muốn."],
+         'werecrow' : ['wolf', 'werecrows', "RAVEN: Bạn là 1 phần của team Sói. Dùng `xem <player>` trong ban đêm để thấy họ có trên giường hay là không. "
+                                            "Bạn cũng có thể dùng `kill <player>` để giết họ."],
+         'wolf cub' : ['wolf', 'wolf cubs', "SÓI CON : Bạn phần của team Sói. Bạn không thể giết người. "
+                                            "Những con sói khác sẽ giận dữ nếu bạn chết và sẽ được giết 2 người vào đêm tiếp theo."],
+         'werekitten' : ['wolf', 'werekittens', "MA CHÓ(MÈO): Bạn vẫn là sói , tại bạn dễ thương hơn nên người dân tưởng bạn là chó. "
+                                                "Đặc biệt XẠ THỦ sẽ không thể bắn trúng bạn, nếu XẠ THỦ có bắn thì viên đạn đó luôn luôn miss. Dùng `kill <player>` nhắn với bot "
+                                                "để giết họ."],
+         'traitor' : ['wolf', 'traitors', "KẺ PHẢN BỘI: Bạn là thằng ăn cứt đá bô, là 1 phần của team Sói. Chỉ có THÁM TỬ mới có thể tiết lộ thân phận của bạn. "
+                                          "Khi tất cả những con Sói trên bàn đều chết, bạn sẽ biến thành sói."],
+         'sorcerer' : ['wolf', 'sorcerers', "PHÙ THỦY ( Đọc cho hết vì ko giống như PHÙ THỦY ở ngoài đâu ): Bạn có thể dùng `xem <player>` vào ban đêm để soi ai đó và xác định xem họ có phải là "
+                                            "TIÊN TRI, TIÊN TRI TÀU , hoặc là CHIÊM TINH GIA . Bạn nhìn sẽ giống dân làng ; Chỉ có THÁM TỬ mới có thể tiết lộ thân phận của bạn."],
+         'cultist' : ['wolf', 'cultists', "THẰNG BẮT NẠT: Bạn là team Sói , Nhiệm vụ của bạn là xiaolin để Sói giết hết dân làng."],
+         'seer' : ['village', 'seers', "TIÊN TRI: Nhiệm vụ của bạn là đi dò Sói; mỗi đêm bạn sẽ có 1 lần dò. Gõ `soi <player>` với BOT để xem họ là ai(LÀ NHÂN VẬT NÀO LUÔN ẤY KO PHẢI CHỈ SÓI HAY DÂN ĐÂU MẤY BAE)."],
+         'oracle' : ['village', 'oracles', "TIÊN TRI TÀU : Nhiệm vụ của bạn là đi dò Sói; mỗi đêm bạn sẽ có 1 lần dò. Gõ `soi <player>` với BOT để xem họ có phải là SÓI HAY KHÔNG (CHỈ CÓ HOẶC KHÔNG THÔI NÊN LÀ HÀNG TÀU)."],
+         'shaman' : ['village', 'shamans', "PHÁP SƯ: Bạn có thể chọn 1 người chơi để đưa TOTEM cho họ mỗi đêm bằng cách gõ `give <player>`. Bạn có thể tự đưa totem cho bản thân,"
+                                           "Nhưng bạn không thể cho TOTEM cùng 1 người trong 2 đêm liên tiếp. Nếu bạn không đưa TOTEM cho bất kỳ ai, nó sẽ chọn 1 người bất kỳ và ném. "
+                                           "Để thấy những TOTEM bạn đang có, dùng lệnh `myrole`."],
+         'harlot' : ['village', 'harlots', "THẰNG RÃNH L`: Mỗi đêm bạn có thể đi chịch 1 người bằng cách dùng `visit <player>`. Nếu bạn đi chịch trúng thằng bị CHÓ CẮN hoặc chịch trúng con CHÓ(SÓi), "
+                                           "Bạn chết. Bạn có thể tự thủ... bằng cách ở nhà."],
+         'hunter' : ['village', 'hunters', "THỢ SĂN: Nhiệm vụ của bạn là giúp dân làng giết toàn bộ SÓI . TRONG SUỐT TRÒ CHƠI , Bạn chỉ có 1 LẦN giết người khác bằng cách dùng `kill <player>`. "
+                                           "Nếu bạn muốn làm hoa hậu thân thiện, hãy dùng `pass`."],
+         'augur' : ['village', 'augurs', "NHÀ CHIÊM TINH : Nhiệm vụ của bạn là đi dò Sói; mỗi đêm bạn sẽ có 1 lần dò. Gõ `soi <player>` với bot để xem HỌ THUỘC TEAM NÀO ( CHỈ LÀ THUỘC TEAM NÀO THÔI KHÔNG THẤY ROLE)."],
+         'detective' : ['village', 'detectives', "THÁM TỬ: Công việc của bạn là xác định toàn bộ SÓI và KẺ PHẢN BỘI. BAN NGÀY, dùng `id <player>` với BOT để xem thân phận thật sự của họ."
+                                                 "Tuy nhiên bạn có {}% nguy cơ bị lộ thân phận cho SÓI mỗi lần bạn dùng kỹ năng.".format(int(DETECTIVE_REVEAL_CHANCE * 100))],
+         'villager' : ['village', 'villagers', "DÂN LÀNG: Nhiệm vụ của bạn là xiaolin hết cỡ để treo cổ SÓI."],
+         'crazed shaman' : ['neutral', 'crazed shamans', "PHÁP SƯ ĐIÊN: Bạn có thể chọn 1 người chơi để đưa TOTEM cho họ mỗi đêm bằng cách gõ `give <player>`. Bạn có thể tự đưa totem cho bản thân, "
+                                                         "Nhưng bạn không thể cho TOTEM cùng 1 người trong 2 đêm liên tiếp. Nếu bạn không đưa TOTEM cho bất kỳ ai, nó sẽ chọn 1 người bất kỳ và ném. "
+                                                         "Bạn sẽ thắng nếu bạn là người sống sót sau cùng (PHE THỨ 3)"],
+         'fool' : ['neutral', 'fools', "THẰNG KHỜ: Bạn phải xiaolin hết mức để bị treo cổ vào ban ngày, đó là cách duy nhất bạn có thề thắng, bạn ko thế thắng bằng bất kỳ cách nào khác."],
+         'cursed villager' : ['template', 'cursed villagers', "DÂN BỊ NGUYỀN : This template is hidden and is seen as a wolf by the seer. Roles normally seen as wolf, the seer, and the fool cannot be cursed."],
+         'gunner' : ['template', 'gunners', "XẠ THỦ: Chức năng ẩn đưa cho người chơi 1 khẩu súng . Gõ `{0}shoot <player>` ở channel vào ban ngày để bắn <player>. "
+                                            "Nếu bạn thuộc phe Dân Làng và bạn bắn trúng Sói, nó sẽ chết . Nếu người bị bắn không phải sói , sẽ có tỉ lệ người bị bắn sẽ chết hoặc bị thương hoặc khẩu súng bị phá hủy "
+                                            "Sói bạn là SÓI và bạn bắn trúng 1 con SÓI khác , nó sẽ miss."],
+         'matchmaker' : ['village', 'matchmakers', "CUPID: Bạn có thể làm bùng binh với lệnh `{0}choose <player1> and <player2>`."
+                                                   "Nếu 1 người trong bùng binh chết , người còn lại cg chết theo. Bạn có tự tạo bùng binh cho mình."
+                                                   "Chỉ có thể tạo bùng binh vào đêm đầu tiên."
+						                           "Nếu bạn ko chọn bùng binh, thì hệ thống sẽ tự thiết lập bùng binh và bạn không thể biết ai nằm trong cái bùng binh đó, trừ khi bạn nằm trong đó."]}
 
 gamemodes = {
     'default' : {
@@ -3757,16 +3757,16 @@ VILLAGE_ROLES_ORDERED = ['seer', 'oracle', 'shaman', 'harlot', 'hunter', 'augur'
 WOLF_ROLES_ORDERED = ['wolf', 'werecrow', 'wolf cub', 'werekitten', 'traitor', 'sorcerer', 'cultist']
 NEUTRAL_ROLES_ORDERED = ['crazed shaman', 'fool']
 TEMPLATES_ORDERED = ['cursed villager', 'gunner']
-totems = {'death_totem' : 'The player who is given this totem will die tonight.',
-          'protection_totem': 'The player who is given this totem is protected from dying tonight.',
-          'revealing_totem': 'If the player who is given this totem is lynched, their role is revealed to everyone instead of them dying.',
-          'influence_totem': 'Votes by the player who is given this totem count twice.',
-          'impatience_totem' : 'The player who is given this totem is counted as voting for everyone except themselves, even if they do not lynch.',
-          'pacifism_totem' : 'The player who is given this totem is always counted as abstaining, regardless of their vote.',
-          'cursed_totem' : 'The player who is given this totem will gain the cursed template if they do not have it.',
-          'lycanthropy_totem' : 'If the player who is given this totem is targeted by wolves the following night, they turn into a wolf instead of dying.',
-          'retribution_totem' : 'If the player who is given this totem is targeted by wolves during the night, they kill a random wolf in turn.',
-          'blinding_totem' : 'The player who is given this totem will be injured and unable to vote the following day.',
+totems = {'death_totem' : 'Thằng nào ăn trúng chết.',
+          'protection_totem': 'Bảo vệ',
+          'revealing_totem': 'Totems này ngăn cho người nhận được nó không bị treo cổ, thay vào đó họ bị lộ danh tính',
+          'influence_totem': 'Totems này làm cho số lượt votes của người này được tính là 2 phiếu ( vị dụ : nó vote thằng Ben > Ben bị votes 2 lần )',
+          'impatience_totem' : 'Ai nhận được Totems này sẽ được tính là votes cho tất cả mọi người , ngoại trừ họ, ngay cả khi không bị treo cổ.',
+          'pacifism_totem' : 'Ai dính totems này không được votes',
+          'cursed_totem' : 'Ai nhận được totems này sẽ bị nguyền rủa nếu họ chưa bị.',
+          'lycanthropy_totem' : 'Ai nhận được totems này thì vào đêm tiếp theo nếu bị sói cắn, họ sẽ biến thành sói thay vì chết đi.',
+          'retribution_totem' : 'Ai nhận được totems này thì vào ban đêm nếu bị sói cắn chết , họ sẽ giết 1 con SÓI random.',
+          'blinding_totem' : 'Ai nhận được totems này sẽ bị thương và không thể votes vào ngày tiếp theo.',
           'deceit_totem' : 'If the player who is given this totem is seen by the seer/oracle the following night, the '
                            'vision will return the opposite of what they are. If a seer/oracle is given this totem, '
                            'all of their visions will return the opposite.'}
